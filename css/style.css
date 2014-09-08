@@ -1,0 +1,82 @@
+/* 1. Change background color of body selector */
+body{
+    background-color: #fdf6e3;
+}
+
+/* 2. Change font size for header and footer selectors*/
+header,
+footer{
+    font-size: 2.0em
+}
+
+/* 3. Change font family of unordered list item inside nav tag*/
+nav ul{
+    font-family: sans-serif;
+}
+
+/* 4. Add border to image whose id is logo.*/
+#logo{
+    border: 2px solid #d04b16;
+}
+
+/* 5. Change background color for all tags whose class type is wrapper.*/
+.wrapper{
+    background-color: #eee8d5;
+}
+
+/* 6. Change text color of tags whose ids are: contents, favs, facts & types.*/
+#contents,
+#favs,
+#facts,
+#types{
+    color: #93a1a1;
+}
+
+/* 7. Using child selector, change background color of dfn class*/
+.wrapper > .dfn{
+    background-color: #b58900;
+}
+
+/* 8. Using adjacent selector, change color text of 2nd strong element inside .dfn class.
+p+strong works as well since we have only one occurence for this pattern across the whole website. Just to be more precise I prefer to use child selector with the adjacent selector to practice :)*/
+.dfn > p + strong {
+    color: #fff;
+}
+
+/* 9. Using fully qualified selector, change background color of mark element starting from html element.*/
+html body header nav ul li mark{
+    background-color: #719e07;
+}
+
+/* 10. Using attribute selector, change background color of link whose relation attribute is set to external.*/
+a[rel="external"]{
+    background-color: #2694d8;
+}
+
+/* 11.  Change color of 1st elemnt in ordered list.*/
+ol li:first-child{
+    color: #719e47;
+}
+
+/* 12. Change color of last element in ordered list.*/
+ol li:last-child{
+    color: #2aa198;
+}
+
+/* 13. Change background color of even elements of li inside types class. Note that you can also use keyword even instead of equation 2n*/
+.types li:nth-child(2n){
+    background-color: #657ba3;
+}
+
+
+/* 14. Change background color of even elements of li inside types class. Note that you can also use keyword odd instead of equation 2n+1*/
+.types li:nth-child(2n+1){
+    background-color: #586e75;
+}
+
+
+/* 15. Change background color of every 3rd items of class types.*/
+.types li:nth-child(3n){
+    background-color: #d04b16;
+}
+
