@@ -39,7 +39,7 @@ nav ul{
 
 /* 8. Using adjacent selector, change color text of 2nd strong element inside .dfn class.
 p+strong works as well since we have only one occurence for this pattern across the whole website. Just to be more precise I prefer to use child selector with the adjacent selector to practice :)*/
-.dfn > p + strong {
+p + strong {
     color: #fff;
 }
 
@@ -63,14 +63,14 @@ ol li:last-child{
     color: #2aa198;
 }
 
-/* 13. Change background color of even elements of li inside types class. Note that you can also use keyword even instead of equation 2n*/
-.types li:nth-child(2n){
+/* 13. Change background color of odd elements of li inside types class. Note that you can also use keyword odd instead of equation 2n*/
+.types li:nth-child(2n+1){
     background-color: #657ba3;
 }
 
 
-/* 14. Change background color of even elements of li inside types class. Note that you can also use keyword odd instead of equation 2n+1*/
-.types li:nth-child(2n+1){
+/* 14. Change background color of even elements of li inside types class. Note that you can also use keyword even instead of equation 2n+1*/
+.types li:nth-child(2n){
     background-color: #586e75;
 }
 
